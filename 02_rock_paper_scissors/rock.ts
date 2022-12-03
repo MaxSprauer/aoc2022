@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { exit } from "process";
+import chalk from "chalk";
 
 process.chdir(__dirname);
 var lines = fs.readFileSync("input.txt", "utf8").trim().split("\n");
@@ -27,7 +27,8 @@ const partOne = lines.reduce(
   (prev, line) => prev + scores[line] + values[line[2]],
   0
 );
-console.log(`Part One: ${partOne}`);
+
+console.log(chalk.magenta("Part One:"), partOne);
 
 const partTwo = lines.reduce((prev, line) => {
   let myChoice;
@@ -60,7 +61,7 @@ const partTwo = lines.reduce((prev, line) => {
       }
       break;
   }
-  console.log(`${theirChoice} ${myChoice}`);
   return prev + scores[`${theirChoice} ${myChoice}`] + values[myChoice];
 }, 0);
-console.log(`Part Two: ${partTwo}`);
+
+console.log(chalk.magenta("Part Two:"), partTwo);
