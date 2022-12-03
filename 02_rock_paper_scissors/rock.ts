@@ -1,3 +1,5 @@
+// Copyright 2022 Max Sprauer
+
 import * as fs from "fs";
 import chalk from "chalk";
 
