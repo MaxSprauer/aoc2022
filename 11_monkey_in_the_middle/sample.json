@@ -1,0 +1,38 @@
+[
+    {
+        "number": 0,
+        "items": [79, 98],
+        "operation": "knew = old * 19",
+        "testDivisible": 23,
+        "ifTrue": 2,
+        "ifFalse": 3,
+        "inspCount": 0
+    },
+    {
+        "number": 1,
+        "items": [54, 65, 75, 74],
+        "operation": "knew = old + 6",
+        "testDivisible": 19,
+        "ifTrue": 2,
+        "ifFalse": 0,
+        "inspCount": 0
+    },
+    {
+        "number": 2,
+        "items": [79, 60, 97],
+        "operation": "knew = old * old",
+        "testDivisible": 13,
+        "ifTrue": 1,
+        "ifFalse": 3,
+        "inspCount": 0
+    },
+    {
+        "number": 3,
+        "items": [74],
+        "operation": "knew = old + 3",
+        "testDivisible": 17,
+        "ifTrue": 0,
+        "ifFalse": 1,
+        "inspCount": 0
+    }
+]
